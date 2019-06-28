@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sign_bg"
+    tools:context=".Activity.SignupActivity">
+    <include
+        android:id="@+id/Signup_title"
+        layout="@layout/signup_title_layout" />
+
+    <EditText
+        android:id="@+id/sign_username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入账户名"
+
+        android:maxLength="15" />
+
+    <EditText
+        android:id="@+id/sign_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLength="15" />
+    <EditText
+        android:id="@+id/sign_pwd_again_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:maxLength="15" />
+    <Button
+        android:id="@+id/btn_sign_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbtn_shape"
+        android:text="注册"
+        android:textSize="20sp" />
+</LinearLayout>

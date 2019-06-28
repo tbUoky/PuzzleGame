@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">拼图</string>
+    <string name="start_begin">3s</string>
+    <string name="loginbyqq">Login By QQ</string>
+    <string name="title_activity_main">益智拼图</string>
+    <string name="login_title_right">注册</string>
+    <string name="login_title_left">退出</string>
+    <string name="loginpagea_login">登录</string>
+    <string name="loginpagea_byqq">通过qq登录</string>
+    <string name="title_activity_home">拼图</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="content_home_time_init">0秒</string>
+    <string name="content_home_time">时间：</string>
+    <string name="content_home_step">步数：</string>
+    <string name="content_home_step_init">0步</string>
+    <string name="content_home_level">难度等级</string>
+    <string name="content_home_level_init">3 X 3</string>
+    <string name="content_home_play_btn">开始</string>
+    <string name="content_home_local_btn">本地</string>
+    <string name="selected_home_level1">3 X 3</string>
+    <string name="selected_home_level2">4 X 4</string>
+    <string name="selected_home_level3">5 X 5</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="content_home_setting_title">设置</string>
+    <string name="content_home_settingmusic_title">移动音效</string>
+    <string name="content_home_about_title">游戏相关</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <string name="setting_music_title">设置移动音效</string>
+    <string-array name="setting_music_list_titles">
+        <item>音效1</item>
+        <item>音效2</item>
+        <item>音效3</item>
+    </string-array>
+    <string-array name="setting_music_list_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>

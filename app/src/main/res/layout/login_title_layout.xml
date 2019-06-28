@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:gravity="center_vertical"
+    android:padding="7dip">
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back" />-->
+
+    <Button
+        android:id="@+id/exitlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/login_title_left"
+        android:layout_centerVertical="true"
+        android:textColor="#d5e9f4"
+        android:background="#135c95a4"
+        android:textSize="15sp"
+        android:onClick="ExitSLK"
+        />
+
+    <Button
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/login_title_right"
+        android:background="#279bcbd8"
+        android:textColor="#afc9d6"
+        android:onClick="GoSignup"
+        android:textSize="15sp" />
+
+</RelativeLayout>

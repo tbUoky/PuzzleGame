@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_puzzle_main_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/ll_home_level"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/content_home_level"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_puzzle_main_type_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/content_home_level_init"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_home_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15sp"
+            android:text="@string/content_home_step"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_margin="15sp"
+            android:text="@string/content_home_step_init"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/content_home_time"
+
+            android:layout_margin="15sp"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_puzzle_main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="15sp"
+            android:text="@string/content_home_time_init"
+            android:textColor="#6aa1bd"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_puzzle_main_btns"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/ll_home_level"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_img"
+        android:layout_below="@id/ll_puzzle_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+         >
+        <ImageView
+            android:id="@+id/iv_puzzle_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pic1"
+            android:layout_margin="@dimen/padding"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_puzzle_main_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15pt">
+
+        <Button
+            android:id="@+id/btn_puzzle_play"
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/loginbtn_shape"
+            android:onClick="Play"
+            android:text="@string/content_home_play_btn" />
+
+        <Button
+            android:id="@+id/btn_puzzle_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/loginbtn_shape"
+            android:onClick="LocalPic"
+            android:text="@string/content_home_local_btn" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_puzzle_run_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll_puzzle_main_btns"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15pt"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_puzzle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/loginbtn_shape"
+            android:onClick="GameBack"
+            android:text="后退" />
+
+        <Button
+            android:id="@+id/btn_puzzle_end"
+            android:onClick="GameEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/loginbtn_shape"
+            android:text="结束" />
+    </LinearLayout>
+
+</RelativeLayout>

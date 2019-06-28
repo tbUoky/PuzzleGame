@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_history_record"
+            android:icon="@drawable/icon_history_record"
+            android:title="游戏记录" />
+        <item
+            android:id="@+id/menu_rank_record"
+            android:icon="@drawable/icon_ranking"
+            android:title="排行榜" />
+
+    </group>
+
+    <item android:title="@string/content_home_setting_title">
+        <menu>
+            <item
+                android:id="@+id/menu_set_music"
+                android:icon="@drawable/icon_settings_music"
+                android:title="@string/content_home_settingmusic_title" />
+            <item
+            android:id="@+id/menu_set_bgm"
+            android:icon="@drawable/icon_settings_bgm"
+            android:title="背景音乐" />
+            <item
+                android:id="@+id/menu_exit_game"
+                android:icon="@drawable/icon_exit"
+                android:title="退出游戏" />
+        </menu>
+    </item>
+    <item android:title="关于">
+        <menu>
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/icon_about"
+            android:title="@string/content_home_about_title" />
+
+         </menu>
+    </item>
+
+
+</menu>

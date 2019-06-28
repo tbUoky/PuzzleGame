@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity"
+    android:background="@drawable/login_bg">
+    <include
+        android:id="@+id/login_page_title"
+        layout="@layout/login_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_title"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/loginpage_logo"
+            android:layout_width="64dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="益智拼图"
+            android:textColor="#8bcaf5"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true" >
+
+        <include
+            android:id="@+id/loginpagea_input"
+            layout="@layout/login_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"/>
+
+        <include
+            android:id="@+id/layout_progress"
+            layout="@layout/loginpagea_progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginpagea_input"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/loginbtn_shape"
+            android:text="@string/loginpagea_login" />
+        <Button
+            android:id="@+id/loginbyqq_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/loginbtn_shape"
+            android:text="@string/loginpagea_byqq"
+            android:onClick="loginQQ"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

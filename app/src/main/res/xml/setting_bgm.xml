@@ -1,0 +1,13 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_bgm"
+        android:title="背景音乐设置开关" />
+    <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:dependency="switch_bgm"
+        android:key="ringtone_bgm"
+        android:ringtoneType="notification"
+        android:title="设置背景" />
+</PreferenceScreen>
